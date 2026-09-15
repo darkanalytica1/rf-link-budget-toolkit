@@ -15,11 +15,11 @@
   <rect width="1000" height="580" fill="#FFFFFF"/>
   <rect x="0.5" y="0.5" width="999" height="579" fill="none" stroke="#D8DEE6"/>
   <rect x="0" y="0" width="1000" height="3" fill="#0B2545"/>
-  <text x="40" y="42" class="mono" font-size="12" letter-spacing="1.2" fill="#6B7688">FIGURE 1 · FREE SPACE · 20 MHz · NF 6 dB · REQUIRED SNR 8 dB</text>
+  <text x="40" y="42" class="mono" font-size="12" letter-spacing="1.2" fill="#5F6B7C">FIGURE 1 · FREE SPACE · 20 MHz · NF 6 dB · REQUIRED SNR 8 dB</text>
   <text x="40" y="70" class="display" font-size="22" font-weight="600" fill="#0E1726">Link budget waterfall: 2.4 GHz video downlink at 5 km</text>
 
   <!-- axis: y(v) = 100 + (30 - v) * 3 -->
-  <g class="mono" font-size="12" fill="#6B7688" text-anchor="end">
+  <g class="mono" font-size="12" fill="#5F6B7C" text-anchor="end">
     <text x="84" y="134">+20</text><text x="84" y="194">0</text><text x="84" y="254">−20</text>
     <text x="84" y="314">−40</text><text x="84" y="374">−60</text><text x="84" y="434">−80</text><text x="84" y="494">−100</text>
     <text x="84" y="108">dBm</text>
@@ -37,9 +37,9 @@
   <line x1="96" y1="451" x2="790" y2="451" stroke="#B7791F" stroke-width="1.5"/>
   <g class="mono" font-size="12">
     <text x="806" y="447" fill="#875A16">Required −87.0 dBm</text>
-    <text x="806" y="463" fill="#6B7688">noise + 8 dB</text>
+    <text x="806" y="463" fill="#5F6B7C">noise + 8 dB</text>
     <text x="806" y="481" fill="#875A16">Noise floor −95.0 dBm</text>
-    <text x="806" y="497" fill="#6B7688">−174 + 73.0 + 6</text>
+    <text x="806" y="497" fill="#5F6B7C">−174 + 73.0 + 6</text>
   </g>
 
   <!-- bars -->
@@ -49,15 +49,15 @@
   <rect x="465" y="436" width="70" height="30" rx="2" fill="#EDF1F6" stroke="#0B2545" stroke-width="1.5"/>
   <rect x="575" y="436" width="70" height="6" rx="1" fill="#3E5C76"/>
   <rect x="685" y="440" width="70" height="4" fill="#0E1726"/>
-  <g stroke="#6B7688" stroke-width="1" stroke-dasharray="2 3">
+  <g stroke="#5F6B7C" stroke-width="1" stroke-dasharray="2 3">
     <line x1="205" y1="130" x2="245" y2="130"/><line x1="315" y1="124" x2="355" y2="124"/>
     <line x1="425" y1="466" x2="465" y2="466"/><line x1="535" y1="436" x2="575" y2="436"/>
     <line x1="645" y1="442" x2="685" y2="442"/>
   </g>
   <text x="390" y="284" text-anchor="middle" class="mono" font-size="13" fill="#3D4A5C">−114.0</text>
   <text x="390" y="300" text-anchor="middle" class="mono" font-size="13" fill="#3D4A5C">dB</text>
-  <text x="390" y="318" text-anchor="middle" class="sans" font-size="12" fill="#6B7688">6 dB per</text>
-  <text x="390" y="333" text-anchor="middle" class="sans" font-size="12" fill="#6B7688">doubling</text>
+  <text x="390" y="318" text-anchor="middle" class="sans" font-size="12" fill="#5F6B7C">6 dB per</text>
+  <text x="390" y="333" text-anchor="middle" class="sans" font-size="12" fill="#5F6B7C">doubling</text>
 
   <!-- margin bracket -->
   <path d="M765 442 h6 v9 h-6" fill="none" stroke="#2F6F73" stroke-width="2"/>
