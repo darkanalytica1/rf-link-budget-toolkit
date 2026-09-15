@@ -2,28 +2,28 @@
   <title id="t">RF Link Budget Toolkit</title>
   <desc id="d">Banner: a transmitter sends a signal that loses power with distance before reaching a receiver.</desc>
   <style>
-    .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif; }
+    .display { font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; letter-spacing: -0.01em; }
     .sans { font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
     .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
-    .wave { fill: none; stroke: #1F3A5F; stroke-width: 1.75; opacity: 0; transform-box: view-box; transform-origin: 842px 210px; animation: expand 6s ease-out infinite; }
+    .wave { fill: none; stroke: #0B2545; stroke-width: 1.75; opacity: 0; transform-box: view-box; transform-origin: 842px 210px; animation: expand 6s ease-out infinite; }
     .w2 { animation-delay: 2s; } .w3 { animation-delay: 4s; }
     @keyframes expand { 0% { opacity: .55; transform: scale(.15); } 80% { opacity: 0; transform: scale(1); } 100% { opacity: 0; transform: scale(1); } }
-    .dot { fill: #1F3A5F; animation: travel 6s linear infinite; }
+    .dot { fill: #0B2545; animation: travel 6s linear infinite; }
     @keyframes travel { 0% { transform: translateX(0); opacity: 1; } 85% { transform: translateX(212px); opacity: .35; } 100% { transform: translateX(212px); opacity: 0; } }
     .lvl { animation: lvl 6s linear infinite; transform-box: fill-box; transform-origin: 0 100%; }
     @keyframes lvl { 0% { transform: scaleX(1); } 85% { transform: scaleX(.2); } 100% { transform: scaleX(.2); } }
     .rx { animation: rx 6s ease-in-out infinite; }
-    @keyframes rx { 0%, 80% { stroke: #DAD6CC; } 88% { stroke: #5E7F68; } 100% { stroke: #DAD6CC; } }
+    @keyframes rx { 0%, 80% { stroke: #D8DEE6; } 88% { stroke: #2F6F73; } 100% { stroke: #D8DEE6; } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .wave { opacity: .25; } }
   </style>
-  <rect width="1200" height="400" fill="#F6F4EF"/>
-  <rect x="0.5" y="0.5" width="1199" height="399" fill="none" stroke="#DAD6CC"/>
-  <text x="64" y="76" class="mono" font-size="13" letter-spacing="2.2" fill="#7A8088">DARKANALYTICA</text>
-  <rect x="64" y="112" width="56" height="3" fill="#1F3A5F"/>
-  <text x="64" y="180" class="serif" font-size="50" font-weight="600" fill="#1B1F24">RF Link Budget Toolkit</text>
-  <text x="64" y="222" class="sans" font-size="19" fill="#4A5058">Decibel arithmetic for drone links, detection and jamming.</text>
-  <text x="64" y="250" class="sans" font-size="19" fill="#4A5058">Pure Python, checked against worked examples.</text>
-  <text x="64" y="326" class="mono" font-size="12" letter-spacing="1" fill="#7A8088">FSPL · EIRP · NOISE FLOOR · SNR · HORIZON · FRESNEL · J/S · BURN-THROUGH</text>
+  <rect width="1200" height="400" fill="#F5F7FA"/>
+  <rect x="0.5" y="0.5" width="1199" height="399" fill="none" stroke="#D8DEE6"/>
+  <text x="64" y="76" class="mono" font-size="13" letter-spacing="2.2" fill="#6B7688">DARKANALYTICA</text>
+  <rect x="64" y="112" width="56" height="3" fill="#0B2545"/>
+  <text x="64" y="180" class="display" font-size="50" font-weight="600" fill="#0E1726">RF Link Budget Toolkit</text>
+  <text x="64" y="222" class="sans" font-size="19" fill="#3D4A5C">Decibel arithmetic for drone links, detection and jamming.</text>
+  <text x="64" y="250" class="sans" font-size="19" fill="#3D4A5C">Pure Python, checked against worked examples.</text>
+  <text x="64" y="326" class="mono" font-size="12" letter-spacing="1" fill="#6B7688">FSPL · EIRP · NOISE FLOOR · SNR · HORIZON · FRESNEL · J/S · BURN-THROUGH</text>
 
   <g transform="translate(0,0)">
     <!-- expanding wavefronts -->
@@ -31,22 +31,22 @@
     <circle class="wave w2" cx="842" cy="210" r="150"/>
     <circle class="wave w3" cx="842" cy="210" r="150"/>
     <!-- transmitter -->
-    <rect x="818" y="192" width="48" height="36" rx="4" fill="#FFFFFF" stroke="#1F3A5F" stroke-width="1.75"/>
-    <line x1="842" y1="192" x2="842" y2="168" stroke="#1F3A5F" stroke-width="1.75"/>
-    <circle cx="842" cy="165" r="3" fill="#1F3A5F"/>
-    <text x="842" y="252" text-anchor="middle" class="mono" font-size="12" fill="#4A5058">Tx +22 dBm</text>
+    <rect x="818" y="192" width="48" height="36" rx="4" fill="#FFFFFF" stroke="#0B2545" stroke-width="1.75"/>
+    <line x1="842" y1="192" x2="842" y2="168" stroke="#0B2545" stroke-width="1.75"/>
+    <circle cx="842" cy="165" r="3" fill="#0B2545"/>
+    <text x="842" y="252" text-anchor="middle" class="mono" font-size="12" fill="#3D4A5C">Tx +22 dBm</text>
     <!-- path -->
-    <line x1="870" y1="210" x2="1086" y2="210" stroke="#5B7083" stroke-width="1.5" stroke-dasharray="3 5"/>
+    <line x1="870" y1="210" x2="1086" y2="210" stroke="#3E5C76" stroke-width="1.5" stroke-dasharray="3 5"/>
     <circle class="dot" cx="872" cy="210" r="5"/>
     <!-- receiver -->
-    <rect class="rx" x="1090" y="192" width="48" height="36" rx="4" fill="#FFFFFF" stroke="#DAD6CC" stroke-width="1.75"/>
-    <line x1="1114" y1="192" x2="1114" y2="168" stroke="#1F3A5F" stroke-width="1.75"/>
-    <circle cx="1114" cy="165" r="3" fill="#1F3A5F"/>
-    <text x="1114" y="252" text-anchor="middle" class="mono" font-size="12" fill="#4A5058">Rx −84 dBm</text>
+    <rect class="rx" x="1090" y="192" width="48" height="36" rx="4" fill="#FFFFFF" stroke="#D8DEE6" stroke-width="1.75"/>
+    <line x1="1114" y1="192" x2="1114" y2="168" stroke="#0B2545" stroke-width="1.75"/>
+    <circle cx="1114" cy="165" r="3" fill="#0B2545"/>
+    <text x="1114" y="252" text-anchor="middle" class="mono" font-size="12" fill="#3D4A5C">Rx −84 dBm</text>
     <!-- level meter -->
-    <text x="872" y="292" class="mono" font-size="11" letter-spacing="1" fill="#7A8088">RECEIVED LEVEL</text>
-    <rect x="872" y="300" width="214" height="6" fill="#E8EDF3"/>
-    <rect class="lvl" x="872" y="300" width="214" height="6" fill="#1F3A5F"/>
-    <text x="1086" y="292" text-anchor="end" class="mono" font-size="11" fill="#A33A2B">−114 dB</text>
+    <text x="872" y="292" class="mono" font-size="11" letter-spacing="1" fill="#6B7688">RECEIVED LEVEL</text>
+    <rect x="872" y="300" width="214" height="6" fill="#EDF1F6"/>
+    <rect class="lvl" x="872" y="300" width="214" height="6" fill="#0B2545"/>
+    <text x="1086" y="292" text-anchor="end" class="mono" font-size="11" fill="#8A6A1F">−114 dB</text>
   </g>
 </svg>
