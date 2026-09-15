@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="t d">
+  <title id="t">Link budget waterfall, 2.4 GHz video downlink at 5 km</title>
+  <desc id="d">Transmit power 20 dBm plus 2 dBi gives 22 dBm EIRP. Free-space loss of 114 dB drops it to -92 dBm. A 10 dBi receive antenna and 2 dB of losses leave -84 dBm, 11 dB above a -95 dBm noise floor and 3 dB above the required level. At 10 km the extra 6 dB of loss makes the margin negative.</desc>
+  <style>
+    .serif { font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, 'Times New Roman', serif; }
+    .sans { font-family: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
+    .grid { stroke: #ECE8E0; stroke-width: 1; }
+    .flow { fill: none; stroke: #1F3A5F; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 34 1100; stroke-dashoffset: 34; animation: flow 7s linear infinite; }
+    @keyframes flow { 0% { stroke-dashoffset: 34; } 80% { stroke-dashoffset: -1000; } 100% { stroke-dashoffset: -1000; } }
+    .ghost { animation: ghost 7s ease-in-out infinite; }
+    @keyframes ghost { 0%, 55% { opacity: .15; } 75%, 90% { opacity: 1; } 100% { opacity: .15; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .ghost { opacity: .8; } .flow { stroke-dasharray: none; stroke-opacity: .25; } }
+  </style>
+  <rect width="1000" height="580" fill="#FFFFFF"/>
+  <rect x="0.5" y="0.5" width="999" height="579" fill="none" stroke="#DAD6CC"/>
+  <rect x="0" y="0" width="1000" height="3" fill="#1F3A5F"/>
+  <text x="40" y="42" class="mono" font-size="12" letter-spacing="1.2" fill="#7A8088">FIGURE 1 · FREE SPACE · 20 MHz · NF 6 dB · REQUIRED SNR 8 dB</text>
+  <text x="40" y="70" class="serif" font-size="22" font-weight="600" fill="#1B1F24">Link budget waterfall: 2.4 GHz video downlink at 5 km</text>
+
+  <!-- axis: y(v) = 100 + (30 - v) * 3 -->
+  <g class="mono" font-size="12" fill="#7A8088" text-anchor="end">
+    <text x="84" y="134">+20</text><text x="84" y="194">0</text><text x="84" y="254">−20</text>
+    <text x="84" y="314">−40</text><text x="84" y="374">−60</text><text x="84" y="434">−80</text><text x="84" y="494">−100</text>
+    <text x="84" y="108">dBm</text>
+  </g>
+  <g>
+    <line class="grid" x1="96" y1="130" x2="790" y2="130"/><line class="grid" x1="96" y1="190" x2="790" y2="190"/>
+    <line class="grid" x1="96" y1="250" x2="790" y2="250"/><line class="grid" x1="96" y1="310" x2="790" y2="310"/>
+    <line class="grid" x1="96" y1="370" x2="790" y2="370"/><line class="grid" x1="96" y1="430" x2="790" y2="430"/>
+    <line class="grid" x1="96" y1="490" x2="790" y2="490"/>
+    <line x1="96" y1="100" x2="96" y2="490" stroke="#DAD6CC"/>
+  </g>
+
+  <!-- noise floor and required level -->
+  <line x1="96" y1="475" x2="790" y2="475" stroke="#B8872B" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <line x1="96" y1="451" x2="790" y2="451" stroke="#B8872B" stroke-width="1.5"/>
+  <g class="mono" font-size="12">
+    <text x="806" y="447" fill="#8A6420">Required −87.0 dBm</text>
+    <text x="806" y="463" fill="#7A8088">noise + 8 dB</text>
+    <text x="806" y="481" fill="#8A6420">Noise floor −95.0 dBm</text>
+    <text x="806" y="497" fill="#7A8088">−174 + 73.0 + 6</text>
+  </g>
+
+  <!-- bars -->
+  <rect x="135" y="130" width="70" height="60" rx="2" fill="#E8EDF3" stroke="#1F3A5F" stroke-width="1.5"/>
+  <rect x="245" y="124" width="70" height="6" rx="1" fill="#1F3A5F"/>
+  <rect x="355" y="124" width="70" height="342" rx="2" fill="#EDF0F3" stroke="#5B7083" stroke-width="1.5"/>
+  <rect x="465" y="436" width="70" height="30" rx="2" fill="#E8EDF3" stroke="#1F3A5F" stroke-width="1.5"/>
+  <rect x="575" y="436" width="70" height="6" rx="1" fill="#5B7083"/>
+  <rect x="685" y="440" width="70" height="4" fill="#1B1F24"/>
+  <g stroke="#7A8088" stroke-width="1" stroke-dasharray="2 3">
+    <line x1="205" y1="130" x2="245" y2="130"/><line x1="315" y1="124" x2="355" y2="124"/>
+    <line x1="425" y1="466" x2="465" y2="466"/><line x1="535" y1="436" x2="575" y2="436"/>
+    <line x1="645" y1="442" x2="685" y2="442"/>
+  </g>
+  <text x="390" y="284" text-anchor="middle" class="mono" font-size="13" fill="#4A5058">−114.0</text>
+  <text x="390" y="300" text-anchor="middle" class="mono" font-size="13" fill="#4A5058">dB</text>
+  <text x="390" y="318" text-anchor="middle" class="sans" font-size="12" fill="#7A8088">6 dB per</text>
+  <text x="390" y="333" text-anchor="middle" class="sans" font-size="12" fill="#7A8088">doubling</text>
+
+  <!-- margin bracket -->
+  <path d="M765 442 h6 v9 h-6" fill="none" stroke="#5E7F68" stroke-width="2"/>
+  <text x="720" y="424" text-anchor="middle" class="mono" font-size="12" fill="#1B1F24">−84.0 dBm</text>
+  <text x="720" y="408" text-anchor="middle" class="mono" font-size="12" fill="#5E7F68">margin +3.0 dB</text>
+
+  <!-- 10 km ghost -->
+  <g class="ghost">
+    <rect x="355" y="466" width="70" height="18" fill="#F6E9E6" stroke="#A33A2B" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="465" y="454" width="70" height="30" fill="none" stroke="#A33A2B" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <rect x="685" y="458" width="70" height="4" fill="#A33A2B"/>
+    <text x="806" y="524" class="mono" font-size="12" fill="#A33A2B">At 10 km: −90.0 dBm</text>
+    <text x="806" y="540" class="mono" font-size="12" fill="#A33A2B">margin −3.1 dB, fails</text>
+  </g>
+
+  <!-- signal level travelling through the chain -->
+  <path class="flow" d="M170 190 V130 H280 V124 H390 V466 H500 V436 H610 V442 H720"/>
+
+  <!-- column labels -->
+  <g class="sans" font-size="13" fill="#1B1F24" text-anchor="middle">
+    <text x="170" y="522">Tx power</text><text x="280" y="522">Tx antenna</text><text x="390" y="522">Path loss</text>
+    <text x="500" y="522">Rx antenna</text><text x="610" y="522">Cable, misc</text><text x="720" y="522">Received</text>
+  </g>
+  <g class="mono" font-size="12" fill="#4A5058" text-anchor="middle">
+    <text x="170" y="541">+20 dBm</text><text x="280" y="541">+2 dBi</text><text x="390" y="541">5 km</text>
+    <text x="500" y="541">+10 dBi</text><text x="610" y="541">−2 dB</text><text x="720" y="541">SNR 11.0 dB</text>
+  </g>
+  <text x="280" y="112" text-anchor="middle" class="mono" font-size="12" fill="#4A5058">EIRP +22 dBm</text>
+</svg>
